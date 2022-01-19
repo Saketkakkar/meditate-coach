@@ -1,0 +1,97 @@
+@media only screen and (min-width: 1200px) {
+  .container {
+    width: 1140px;
+  }
+}
+
+/* 81 px is nav height */
+.home-section {
+  min-height: calc(100vh - 81px);
+}
+.section {
+  min-height: 100vh;
+}
+
+footer {
+  background-color: #f27300;
+  color: white;
+}
+
+.footer {
+  min-height: 160px;
+}
+
+/* .section {
+  min-height: 600px;
+} */
+
+.label {
+  position: relative;
+  color: #f27300;
+  font-family: "Poppins", sans-serif;
+}
+
+.label h6:before {
+  width: 25px;
+  height: 1px;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  background-color: #f27300;
+}
+
+.label h6 {
+  padding-left: 30px;
+}
+
+.title {
+  padding: 10px 0;
+}
+
+#testimonials {
+  padding-top: 110px;
+  min-height: 100vh;
+}
+
+.carousel-control-next,
+.carousel-control-prev /*, .carousel-indicators */ {
+    filter: invert(100%);
+}
+
+.carousel-indicators {
+  filter: invert(100%);
+  position: absolute;
+  bottom: -30px;
+}
+
+.testimonial{
+  width: 70%;
+  margin: auto;
+}
+
+.custom-card {
+  position: relative;
+  height: 100px;
+}
+
+.content {
+  position: absolute;
+  bottom: 0;
+}
+
+.custom-card > i {
+  position: absolute;
+  color: white;
+  background-color: #f27300;
+  padding: 15px;
+  font-size: 1.25em;
+  border-radius: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+}
