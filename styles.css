@@ -21,10 +21,6 @@ footer {
   min-height: 160px;
 }
 
-/* .section {
-  min-height: 600px;
-} */
-
 .label {
   position: relative;
   color: #f27300;
@@ -94,4 +90,26 @@ footer {
 .icon {
   width: 60px;
   height: 60px;
+}
+
+.nav-item > .active {
+  color: #f27300 !important;
+}
+
+.nav-button {
+  border-radius: 8px;
+  background-color: #f27300;
+}
+
+.nav-button > a {
+  color: black !important;
+  text-decoration: none;
+}
+
+.nav-button > .active {
+  color: white !important;
+}
+
+.contact-us {
+  color: #f27300;
 }
