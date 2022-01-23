@@ -2,13 +2,39 @@
   .container {
     width: 1140px;
   }
-}
 
+  .modal-dialog {
+    height: 75vh;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .modal-dialog {
+    height: 100vh;
+    width: 100vw;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+}
+/* 
+@media only screen and (max-width: 796px) {
+  .modal-dialog {
+    height: 100vh;
+    width: 100vw;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+} */
+
+.heading {
+  color: #f27300;
+  size: 40px;
+}
 /* 81 px is nav height */
 .home-section {
   min-height: calc(100vh - 81px);
 }
 .section {
+  padding-top: 10vh;
   min-height: 100vh;
 }
 
@@ -112,4 +138,19 @@ footer {
 
 .contact-us {
   color: #f27300;
+}
+
+.card-link {
+  border-radius: 8px;
+  padding: 10px;
+  color: white;
+  background-color: #f27300;
+  text-decoration: none;
+  border: none;
+}
+
+.card-link:hover {
+  cursor: pointer;
+  color: black;
+  border: 1px solid black;
 }
