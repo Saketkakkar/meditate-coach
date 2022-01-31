@@ -134,7 +134,10 @@ modalForm.addEventListener(
         {
           mode: "no-cors",
         }
-      ).then((data) => console.log(data));
+      ).then((data) => {
+        modalForm.style.display = "none";
+        document.getElementById("h1-modal-form").style.display = "block";
+      });
     }
 
     modalForm.classList.add("was-validated");
@@ -173,7 +176,10 @@ contactForm.addEventListener(
         {
           mode: "no-cors",
         }
-      ).then((data) => console.log(data));
+      ).then((data) => {
+        contactForm.style.display = "none";
+        document.getElementById("h1-contact-form").style.display = "block";
+      });
     }
 
     contactForm.classList.add("was-validated");
