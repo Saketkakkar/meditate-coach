@@ -78,7 +78,7 @@ footer {
 
 .carousel-control-next,
 .carousel-control-prev /*, .carousel-indicators */ {
-    filter: invert(100%);
+  filter: invert(100%);
 }
 
 .carousel-indicators {
@@ -87,7 +87,7 @@ footer {
   bottom: -30px;
 }
 
-.testimonial{
+.testimonial {
   width: 70%;
   margin: auto;
 }
@@ -146,11 +146,23 @@ footer {
   color: white;
   background-color: #f27300;
   text-decoration: none;
-  border: none;
+  border: 1px solid white;
 }
 
 .card-link:hover {
   cursor: pointer;
   color: black;
   border: 1px solid black;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
 }

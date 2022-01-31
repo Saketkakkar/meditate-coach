@@ -401,8 +401,8 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6 align-self-center">
-          <div class="row">
+        <div class="col-md-5 align-self-center">
+          <!-- <div class="row">
             <div class="ratio ratio-16x9">
               <iframe
                 src="https://docs.google.com/forms/d/e/1FAIpQLSdkRWk6wc3v6c3iufThBylFQTqYUsd0I7vC_09wAbkLpja5EA/viewform"
@@ -413,7 +413,60 @@
                 marginwidth="0"
               ></iframe>
             </div>
-          </div>
+          </div> -->
+
+          <form class="row g-3 needs-validation" novalidate id="contact-form">
+            <div class="col-md-6">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" required />
+              <div class="invalid-feedback">Name is required!</div>
+            </div>
+
+            <div class="col-md-6">
+              <label for="city" class="form-label">City</label>
+              <input type="text" class="form-control" id="city" required />
+              <div class="invalid-feedback">City is required!</div>
+            </div>
+
+            <div class="col-md-12">
+              <label for="whatsapp-number" class="form-label"
+                >Whatsapp Number</label
+              >
+              <input
+                type="number"
+                class="form-control"
+                id="whatsapp-number"
+                required
+                min="1000000000"
+                max="9999999999"
+              />
+              <div class="invalid-feedback">Number should be valid!</div>
+            </div>
+
+            <div class="col-md-12">
+              <label for="number" class="form-label"
+                >Mobile Number(if different from Whatsapp Number)</label
+              >
+              <input
+                type="number"
+                class="form-control"
+                id="number"
+                min="1000000000"
+                max="9999999999"
+              />
+              <div class="invalid-feedback">Number should be valid!</div>
+            </div>
+
+            <div class="col-12">
+              <button
+                class="btn btn-primary mx-auto w-100 card-link"
+                type="submit"
+                style="background-color: #f27300"
+              >
+                Submit form
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </section>
@@ -485,18 +538,72 @@
                 </div>
               </div>
               <div class="col-lg-6 align-self-center" style="height: 80%">
-                <div class="row h-100">
-                  <div class="ratio ratio-16x9">
-                    <iframe
-                      src="https://docs.google.com/forms/d/e/1FAIpQLSdkRWk6wc3v6c3iufThBylFQTqYUsd0I7vC_09wAbkLpja5EA/viewform"
-                      width="540"
-                      height="600"
-                      frameborder="0"
-                      marginheight="0"
-                      marginwidth="0"
-                    ></iframe>
+                <form
+                  class="row g-3 needs-validation"
+                  novalidate
+                  id="modal-form"
+                >
+                  <div class="col-md-6">
+                    <label for="m-name" class="form-label">Name</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="m-name"
+                      required
+                    />
+                    <div class="invalid-feedback">Name is required!</div>
                   </div>
-                </div>
+
+                  <div class="col-md-6">
+                    <label for="m-city" class="form-label">City</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="m-city"
+                      required
+                    />
+                    <div class="invalid-feedback">City is required!</div>
+                  </div>
+
+                  <div class="col-md-12">
+                    <label for="m-whatsapp-number" class="form-label"
+                      >Whatsapp Number</label
+                    >
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="m-whatsapp-number"
+                      required
+                      min="1000000000"
+                      max="9999999999"
+                    />
+                    <div class="invalid-feedback">Number should be valid!</div>
+                  </div>
+
+                  <div class="col-md-12">
+                    <label for="m-number" class="form-label"
+                      >Mobile Number(if different from Whatsapp Number)</label
+                    >
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="m-number"
+                      min="1000000000"
+                      max="9999999999"
+                    />
+                    <div class="invalid-feedback">Number should be valid!</div>
+                  </div>
+
+                  <div class="col-12">
+                    <button
+                      class="btn btn-primary mx-auto w-100 card-link"
+                      type="submit"
+                      style="background-color: #f27300"
+                    >
+                      Submit form
+                    </button>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
